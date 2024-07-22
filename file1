@@ -1,0 +1,8 @@
+git branch : the command is used to list all the branches present in local repository
+git branch <branch name> : the command is used to create a new branch.
+git checkout <branch name> : the command is used to switch to the particular branch
+git checkout –b <branch name> : the command is used to create a new branch and switch to the same branch.
+git branch -d <branch name> : the command is used to delete the branch
+git branch –D <branch name> 
+git branch –M <branch name> : the command renames a branch name 
+git merge <branch name> : the command is used to merge the branch.
