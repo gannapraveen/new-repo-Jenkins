@@ -1,0 +1,149 @@
+remote changes
+------------------
+git remote -v  / to check the central repo.
+
+git remote add origin <github-url>   /to add the remote repo.
+
+git push  
+----------
+it is an action to copy the changes/files from local to remote repository.
+
+syn: git push origin master
+
+git pull
+-----------
+it is an action to copy the changes from remote to local.
+
+syn: git pull origin master
+
+git fetch
+---------------
+it is an action to bring info. about changes from remote to local repo.
+
+syn: git fetch
+
+git clone
+-------------
+to copy the entire remote repo to local
+
+syn: git clone <github-url>
+
+git branching
+-------------------
+
+1. git branch : to see the list of branch.
+ syn: git branch
+
+2. to create a branch
+syn: git branch <branchname>
+
+3. to switch the branch
+
+syn: git checkout <branch-name>
+
+4. git checkout -b <branchname>  / to switch to a new branch
+
+5. git branch -d brancname /to delete the branch
+
+
+GIT MERGEgit
+-------------
+combining the branches.
+
+2-way mergeing
+-----------------
+
+syn: git merge <branch-name>
+
+
+
+3-way r
+-------------
+
+M ->  M1 M2 M3             M4
+F ->  M1 M2 M3 F1 F2 F3
+
+git merge F
+
+it will merge the F branch to M branch.
+it will give one extra commit id that is merge commit.
+
+
+
+git rebase
+-------------
+
+it is method of linear merging.
+
+syn: git rebase <branch-name>
+
+M-> m1 m2 m3       m4      m5
+f-> m1 m2 m3 f1 f2     f3      f4
+ git rebase ---> m1 m2 m3 f1 f2 f3 f4 m4 m5
+
+
+MERGE CONFLICT
+------------------
+
+M1---> create one file and add some content to that.
+M2 ----> create one file give the same name of file as M1 but add diff. content.
+
+merge conflict occure if u merge branch M1 and M2
+
+resolving merge conflict
+-----------------------------
+open the file with any editor and resolve merge conflict manualy.
+
+then add that file and then commit it.
+
+
+git squash
+----------------
+combining the commits id
+
+syn: git rebase -i HEAD~4
+
+
+git cherry-pick
+-------------------
+m1 ---> m1 m2 m3
+f -----> f1 f2 f3 
+
+adding a particular commits to the branch.
+
+syn: git cherry-pick <commit-id>
+
+
+ignoring the files in git
+--------------------------
+create one file named as
+.gitignore
+
+list out those files which you want git should ignore.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
